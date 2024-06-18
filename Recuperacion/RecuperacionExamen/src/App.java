@@ -20,5 +20,6 @@ public class App {
         System.out.println(hagfish.ccComerC());
 
         ccHagfishCaicedo ccHagfishCaicedo = new ccHagfishCaicedo(" Hagfish mutado");
-        
+        ccTanqueMutacion.ccMutar(); 
+    }
 }
