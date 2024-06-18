@@ -1,8 +1,6 @@
 import ccAgnathan.ccHagfish;
-import ccAgnathan.ccHagfishCaicedo;
 import ccFanerozoico.ccHagfissh;
 import ccProterozoico.ccWaiting;
-import java.util.Scanner;
 
 
 public class App {
@@ -19,7 +17,9 @@ public class App {
         System.out.println(hagfish.ccComer());
         System.out.println(hagfish.ccComerC());
 
-        ccHagfishCaicedo ccHagfishCaicedo = new ccHagfishCaicedo(" Hagfish mutado");
-        ccTanqueMutacion.ccMutar(); 
+        ccTanqueMutacion tanqueMutacion = new ccTanqueMutacion();
+
+        // Llamar al método ccMutar con el nombre del hagfish
+        tanqueMutacion.ccMutar("HagfishCaicedo");
     }
 }

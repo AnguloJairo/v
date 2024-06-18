@@ -16,7 +16,7 @@ public class ccTanqueMutacion {
         System.out.print("Ingrese la clave: ");
         this.ccClave = scanner.nextLine();
         if (this.ccClave.equals(CLAVE_CORRECTA)) {
-            System.out.println("Clave correcta. Iniciando proceso de mutacion");
+            System.out.println("Clave correcta. Iniciando proceso de mutación.");
             return true;
         } else {
             System.out.println("Clave incorrecta. Intente de nuevo.");
@@ -27,7 +27,7 @@ public class ccTanqueMutacion {
     public void ccMutar(String nombre) {
         if (ccSolicitarClave()) { 
             int radiacion = random.nextInt(901) + 100;
-            System.out.println(nombre + " es un hagfish/ HagfishCaicedo esta mutando:");
+            System.out.println(nombre + " está mutando:");
             System.out.println("Irradiando:");
             for (int i = 0; i <= 50; i++) {
                 try {
@@ -36,12 +36,11 @@ public class ccTanqueMutacion {
                     Thread.currentThread().interrupt();
                 }
                 int progress = (int) ((i / 50.0) * radiacion);
-                String bar = "#".repeat(i) + "-".repeat(50 - i); // Corregido: simplificación para generar la barra
-                System.out.print("\r" + bar + " " + progress + " de " + radiacion + " (msv)");
+                String bar = "#".repeat(i) + "-".repeat(50 - i);
+                System.out.print("\r" + bar + " " + progress + " de " + radiacion + " mSv");
             }
             System.out.println("\nProceso de irradiación completado.");
         }
     }
-
-
 }
+
